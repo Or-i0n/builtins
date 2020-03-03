@@ -1,4 +1,4 @@
-# Shows Python's default keywords
+# Shows Python's default keywords.
 
 import keyword
 
