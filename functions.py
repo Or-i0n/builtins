@@ -1,15 +1,14 @@
 #! /usr/bin/python3
 
 import builtins
-from types import BuiltinFunctionType
+from types import BuiltinFunctionType as BFT
 
 
 def get_funcs():
     """Yields built-in funtion names."""
 
-
     for name, obj in vars(builtins).items():
-        if isinstance(obj, BuiltinFunctionType):
+        if isinstance(obj, BFT):
             yield name
 
 
